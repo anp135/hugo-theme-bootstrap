@@ -1,8 +1,8 @@
 {{- partialCached "footer/actions-panel" . -}}
 <div class="row text-center{{ if .Site.Menus.footer }} text-lg-start{{ end }}">
   <div class="col-12 mt-2{{ if .Site.Menus.footer }} col-lg-3{{ end }}">
-    <p class="mb-2">{{ .Site.Title }}</p>
-    <p class="text-secondary mb-2"><small>{{ .Site.Params.Description }}</small></p>
+    {{- if (default true .Site.Params.footer.title) -}}<p class="mb-2">{{ .Site.Title }}</p>{{- end -}}
+    {{- if (default true .Site.Params.footer.description) -}}<p class="text-secondary mb-2"><small>{{ .Site.Params.Description }}</small></p>{{- end -}}
     {{- partialCached "footer/copyright" . -}}
     {{- partialCached "footer/powered-by" . -}}
     {{- partial "footer/social-links" . -}}

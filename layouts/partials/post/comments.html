@@ -1,4 +1,4 @@
-{{- if and (default true .Site.Params.comment) (default true .Params.comment) -}}
+{{- if (default (default true .Site.Params.post.comment) .Params.comment) -}}
 {{- partial "hooks/comments-begin" . -}}
 <div class="card component row post-comments" id="post-comments">
   <div class="card-header">

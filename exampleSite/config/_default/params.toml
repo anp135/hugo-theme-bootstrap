@@ -85,6 +85,10 @@ viewer = true # Image Viewer
 # featuredPosts = true # Enable featured posts widget
 # recentPosts = true # Enable featured posts widget
 # collapsed = true # Collapse sidebar widgets by default on small screens.
+# profile = false # Disable profile widget
+
+[footer]
+  # title: false # Disable Title repeat in the footer
 
 [codeBlock]
 # maxLines = 8
@@ -94,6 +98,7 @@ lineNos = false # true/false represents that show/hide the line numbers by defau
 # excerpt = "description"
 # excerptMaxLength = 120
 # copyright = false # Whether to display copyright section on each post.
+# comment: false # Default post comment behaviour set to disable
 # plainifyExcerpt = false # Format excerpt in HTML if false.
 featuredImage = true     # Show the featured image above the content.
 numberifyHeadings = true # Count headings automatically.
